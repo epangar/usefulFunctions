@@ -1,5 +1,12 @@
-//Gets a number and return an array with its ciphers
+//Gets a positive integer and returns an array  of its ciphers
 
 function ciphers(n){
-  return (n.toString()).split("").join();
+  var answer=[]
+  
+  while(n>0){
+    answer.unshift(n%10)
+    n=Math.floor(n/10)
+    }
+
+return answer;
 }
