@@ -18,9 +18,9 @@ function fibonacciNth(n){
           numbers.push(newNumber)
           counter++
         }
-      }
-    
-      return numbers
     }
+    
+  return numbers
+}
     
     
