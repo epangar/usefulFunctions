@@ -1,12 +1,7 @@
 //Gets a positive integer and returns an array  of its ciphers
 
-function ciphers(n){
+function ciphers(num){
   var answer=[]
-  
-  while(n>0){
-    answer.unshift(n%10)
-    n=Math.floor(n/10)
-    }
-
-return answer;
+  num=num.toString().split("").forEach(e=>answer.push(parseInt(e)))
+  return answer;
 }
